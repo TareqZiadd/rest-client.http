@@ -1,0 +1,37 @@
+# GET All Posts
+GET http://127.0.0.1:8000/api/posts
+Content-Type: application/json
+
+###
+
+# GET Single Post
+GET http://127.0.0.1:8000/api/posts/1
+Content-Type: application/json
+
+###
+
+# POST Create a New Post
+POST http://127.0.0.1:8000/api/posts
+Content-Type: application/json
+
+{
+  "title": "New Post Title",
+  "content": "This is the content of the new post."
+}
+
+###
+
+# PUT Update an Existing Post
+PUT http://127.0.0.1:8000/api/posts/1
+Content-Type: application/json
+
+{
+  "title": "Updated Post Title",
+  "content": "This is the updated content of the post."
+}
+
+###
+
+# DELETE Remove a Post
+DELETE http://127.0.0.1:8000/api/posts/1
+Content-Type: application/json
